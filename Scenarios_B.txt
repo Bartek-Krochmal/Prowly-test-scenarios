@@ -8,3 +8,15 @@ Scenario: Search for "Prowly Media Monitoring" using copilot with shopping conte
   When I use "copilot" to search for "Prowly Media Monitoring"
   And I filter the search results by "Shopping"
   Then I should see search results only with shopping content category
+
+Scenario: Search for "Prowly Media Monitoring" using copilot with news content category
+  Given I am on the Bing homepage
+  When I use "copilot" to search for "Prowly Media Monitoring"
+  And I filter the search results by "News"
+  Then I should see search results with news content category
+
+Scenario: Search for "Prowly Media Monitoring" using copilot with image content category
+  Given I am on the Bing homepage
+  When I use "copilot" to search for "Prowly Media Monitoring"
+  And I filter the search results by "Images"
+  Then I should see search results with image content category
