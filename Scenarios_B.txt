@@ -1,0 +1,10 @@
+Scenario: Search for "Prowly Media Monitoring" using copilot
+  Given I am on the Bing homepage
+  When I use "copilot" to search for "Prowly Media Monitoring"
+  Then I should see relevant search results
+
+Scenario: Search for "Prowly Media Monitoring" using copilot with shopping content category
+  Given I am on the Bing homepage
+  When I use "copilot" to search for "Prowly Media Monitoring"
+  And I filter the search results by "Shopping"
+  Then I should see search results only with shopping content category
