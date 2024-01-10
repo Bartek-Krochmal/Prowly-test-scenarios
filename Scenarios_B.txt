@@ -1,3 +1,5 @@
+Test scenarios for"Using "copilot" in the bing.com search engine to gather information about Prowly's media monitoring module"
+
 Scenario: Search for "Prowly Media Monitoring" using copilot
   Given I am on the Bing homepage
   When I use "copilot" to search for "Prowly Media Monitoring"
