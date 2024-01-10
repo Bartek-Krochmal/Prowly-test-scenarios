@@ -3,3 +3,15 @@ Scenario: Search for "Prowly Media Monitoring" with video content category
   When I search for "Prowly Media Monitoring"
   And I filter the search results by "Videos"
   Then I should see search results only with video content category
+
+Scenario: Search for "Prowly Media Monitoring" with news content category
+  Given I am on the Bing homepage
+  When I search for "Prowly Media Monitoring"
+  And I filter the search results by "News"
+  Then I should see search results only with news content category
+
+Scenario: Search for "Prowly Media Monitoring" with image content category
+  Given I am on the Bing homepage
+  When I search for "Prowly Media Monitoring"
+  And I filter the search results by "Images"
+  Then I should see search results only with image content category
