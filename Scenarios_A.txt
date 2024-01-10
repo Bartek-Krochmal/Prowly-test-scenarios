@@ -1,3 +1,5 @@
+Test scenarios for "Search phrase "Prowly Media Monitoring" on bing.com with filtering by content category"
+
 Scenario: Search for "Prowly Media Monitoring" with video content category
   Given I am on the Bing homepage
   When I search for "Prowly Media Monitoring"
